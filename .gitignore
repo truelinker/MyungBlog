@@ -1,0 +1,10 @@
+.hugo_build.lock
+LICENSE
+archetypes/
+assets/
+config.toml
+content/
+data/
+layouts/
+resources/
+static/
