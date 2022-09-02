@@ -3,30 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://truelinker.github.io/MyungBlog/categories/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/series/getting-started/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/tags/hugo-site/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/portfolio/secure-drive/</loc>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/career/secure-drive/</loc>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/series/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://truelinker.github.io/MyungBlog/blog/tachyons-for-style/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/tags/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/categories/theme-features/</loc>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/career/tachyons-for-style/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://truelinker.github.io/MyungBlog/blog/css-grid-scaffold/</loc>
+    <loc>https://truelinker.github.io/MyungBlog/portfolio/tachyons-for-style/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/career/css-grid-scaffold/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://truelinker.github.io/MyungBlog/blog/built-in-contact-form/</loc>
+    <loc>https://truelinker.github.io/MyungBlog/portfolio/css-grid-scaffold/</loc>
+    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/career/built-in-contact-form/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/portfolio/built-in-contact-form/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/contact/</loc>
@@ -35,7 +50,10 @@
     <loc>https://truelinker.github.io/MyungBlog/form/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url><url>
-    <loc>https://truelinker.github.io/MyungBlog/blog/</loc>
+    <loc>https://truelinker.github.io/MyungBlog/career/</loc>
+    <lastmod>2019-02-20T09:31:27-06:00</lastmod>
+  </url><url>
+    <loc>https://truelinker.github.io/MyungBlog/portfolio/</loc>
     <lastmod>2019-02-20T09:31:27-06:00</lastmod>
   </url><url>
     <loc>https://truelinker.github.io/MyungBlog/about/</loc>
