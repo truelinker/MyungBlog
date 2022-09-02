@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="page-main pa4 {{ .Kind }}" role="main">
-  <section class="blog-content mw7 center">
-    {{ $paginator := .Paginate (where .Pages "Type" "blog") }}
+  <section class="career-content mw7 center">
+    {{ $paginator := .Paginate (where .Pages "Type" "career") }}
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}

@@ -6,8 +6,8 @@ date: 2019-07-03
 author: "Eric Anderson"
 draft: false
 images:
-  - /blog/assets/tachyons-thumbnail.png
-  - /blog/assets/tachyons-logo-script-feature.png
+  - /career/assets/tachyons-thumbnail.png
+  - /career/assets/tachyons-logo-script-feature.png
 series:
   - Getting Started
 tags:

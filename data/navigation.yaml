@@ -5,9 +5,12 @@ header:
   - name: About
     title: About Blogophonic
     url: /about/
-  - name: Blog
-    title: Blog
-    url: /blog/
+  - name: Career
+    title: Career
+    url: /career/
+  - name: Portfolio
+    title: Portfolio
+    url: /portfolio/
   - name: Contact
     title: Contact Form
     url: /contact/

@@ -6,8 +6,8 @@ date: 2019-07-01
 author: "Eric Anderson"
 draft: false
 images:
-  - /blog/assets/built-in-contact-form-thumbnail.png
-  - /blog/assets/built-in-contact-form-feature.png
+  - /portfolio/assets/built-in-contact-form-thumbnail.png
+  - /portfolio/assets/built-in-contact-form-feature.png
 series:
   - Getting Started
 tags:
