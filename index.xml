@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Serial communication</title>
+      <link>https://truelinker.github.io/MyungBlog/career/sio/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/sio/</guid>
+      <description>I developed a serial communication protocol. As for the background, as the tester that uses only a single serial bus was newly introduced, I had to change the firmware to use it with the tester that uses the existing dual serial bus, and I was in charge of developing the fimrware. The purpose of this project is to change the firmware to work with testers with different serial communication methods on the same firmware.</description>
+    </item>
+    
+    <item>
       <title>Web RTC</title>
       <link>https://truelinker.github.io/MyungBlog/portfolio/webrtc/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
@@ -45,25 +54,6 @@ How it works Two peers (Android application and web application) connect to a ro
       <description>Voca Master This is an Android application that I developed in 2011. This is an application that helps you memorize new English words.
 Github : https://github.com/truelinker/vocaMaster
 Abstraction Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere. For the summer personal project, I‟ve developed an education app for the Android platform; the app is for helping people to memorize vocabularies with spending remnant time such as during waiting a bus, waiting a meal, and so on.</description>
-    </item>
-    
-    <item>
-      <title>Tachyons for Style</title>
-      <link>https://truelinker.github.io/MyungBlog/career/tachyons-for-style/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://truelinker.github.io/MyungBlog/career/tachyons-for-style/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because Speed Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
-    </item>
-    
-    <item>
-      <title>CSS Grid Scaffold</title>
-      <link>https://truelinker.github.io/MyungBlog/career/css-grid-scaffold/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://truelinker.github.io/MyungBlog/career/css-grid-scaffold/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.” — Chris House, A Complete Guide to CSS Grid Layout 1
-Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips. Most times, while fighting with floats and widths of content and sidebars or just basically trying to get something beside something else without using a stupid TABLE.</description>
     </item>
     
     <item>
@@ -90,7 +80,7 @@ Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times
       <pubDate>Tue, 19 Feb 2019 14:47:22 -0600</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/about/</guid>
-      <description>Welcome. Thank you for visiting my webpage. You can check my career and portpolio. Career Storage &#34;Security Features developed for WD.&#34; CSS Grid Scaffold Grid Layout is a new layout model for CSS that has powerful abilities to control the sizing and positioning of boxes and their contents. Unlike Flexbox, which is single-axis oriented, Grid Layout is optimized for 2-dimensional layouts. Learn more Built-in Contact Form Blogophonic has form to email capabilities built right in, all you need to do is include your email address in the front matter of the contact page.</description>
+      <description> Welcome. Thank you for visiting my webpage. You can check my career and portpolio. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;Android application that helps memorize new vocabularies.&#34; </description>
     </item>
     
     <item>
