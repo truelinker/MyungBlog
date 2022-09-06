@@ -13,7 +13,7 @@
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/career/secure-drive/</guid>
-      <description>Currently, what I do at western digital is to develop security features. TCG provides that data stored on HDDs or SSDs is self-encrypted under policy-based access control. The following link explains the TCG storage specification more easily. https://www.kingston.com/en/community/articledetail/articleid/51969 Because Speed Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML.</description>
+      <description>Now I&amp;rsquo;m working at Western Digital as a firmware developer on a team that provides a common security engine for SSDs and HDDs. I am in charge of developing Security APIs so that the security engine provided by the team can be used according to the HDD characteristics. TCG protocols (TCG enterprise, opal, pyrite, etc). Sanitize ATA Security 1. [TCG] (https://nvmexpress.org/wp-content/uploads/TCGandNVMe_Joint_White_Paper-TCG_Storage_Opal_and_NVMe_FINAL.pdf) provides that data stored on HDDs or SSDs is self-encrypted under policy-based access control.</description>
     </item>
     
     <item>
