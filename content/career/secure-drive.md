@@ -19,21 +19,21 @@ layout: single
 ---
 
 
-## Currently, what I do at western digital is to develop security features.
-
+### Now I'm working at Western Digital as a firmware developer on a team that provides a common security engine for SSDs and HDDs. I am in charge of developing Security APIs so that the security engine provided by the team can be used according to the HDD characteristics.
+1. TCG protocols (TCG enterprise, opal, pyrite, etc).
+2. Sanitize
+3. ATA Security
 ---
 
-### [TCG](https://nvmexpress.org/wp-content/uploads/TCGandNVMe_Joint_White_Paper-TCG_Storage_Opal_and_NVMe_FINAL.pdf)  provides that data stored on HDDs or SSDs is self-encrypted under policy-based access control. The following link explains the TCG storage specification more easily. https://www.kingston.com/en/community/articledetail/articleid/51969
+#### 1. [TCG] (https://nvmexpress.org/wp-content/uploads/TCGandNVMe_Joint_White_Paper-TCG_Storage_Opal_and_NVMe_FINAL.pdf)  provides that data stored on HDDs or SSDs is self-encrypted under policy-based access control. The following link explains the TCG storage specification more easily. https://www.kingston.com/en/community/articledetail/articleid/51969
+
+The following figure shows how reads/writes are access-controlled and encrypted in the TCG configuration store.
+![screenshot](/img/TCGHowitWorks.png)
 
 ---
+### 2. [Sanitize] This function erases all data on the media (disk media, flash memory, DRAM memory) in the storage device. The Self-Encryption Drive encrypts data first, and then overwrites all data with a specific pattern or garbage data.
+---
+### 3. [ATA Security] This is a basic security feature provided by storage drives using SATA interface.
+The following ATA security access controls are provided, which allow users to way to protect their data.
 
-### Because Speed
-
-Building this static site generator theme was the first time I used an Atomic
-(or Functional) CSS system like Tachyons. It's a design system that provides
-very small (which means fast) CSS modules that you can use in your HTML. So,
-rather than writing every line of CSS, you apply the style you need as you write
-your HTML with easy to understand shorthand class names. This makes for a very
-powerful way to style, in the browser, or while building a static site like this
-one – since you can see every change with every save. **It's a joy to use.**
-
+![screenshot](/img/ATASecurityStateDiagram.png)
