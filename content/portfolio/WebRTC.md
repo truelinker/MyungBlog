@@ -23,10 +23,10 @@ Using the WebRTC open source, I'd modified to implment my own p2p video chat app
 > Github : https://github.com/truelinker/webrtc_p2pvideo
 
 ## How it works
-1. They connect to a room created by a server such as node.js and exchange information such as each other's network information (ip, port).
+1. Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other's network information (ip, port).
 2.  When starting a video call, the call starts by exchanging each other's media information based on the given network information.
-![How it works](/portfolio/assets/howWebRTCworks.jpg)
+![How it works](/img/howWebRTCworks.jpg)
 ---
 The following video shows the implementation.
-[![Demo video](/portfolio/assets/webrtc_demo.jpg)](https://www.youtube.com/watch?v=PuphKiK7xmE "Demo Video")
+[![Demo video](/img/webrtc_demo.jpg)](https://www.youtube.com/watch?v=PuphKiK7xmE "Demo Video")
 

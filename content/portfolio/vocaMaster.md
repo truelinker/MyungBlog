@@ -22,7 +22,7 @@ layout: single
 This is an Android application that I developed in 2011. This is an application that helps you memorize new English words.
 > Github : https://github.com/truelinker/vocaMaster
 
-[![Demo video](/portfolio/assets/VocaMasterDemo.jpg)](https://www.youtube.com/watch?v=5WGz2HGq2gY "Demo Video")
+[![Demo video](/img/VocaMasterDemo.jpg)](https://www.youtube.com/watch?v=5WGz2HGq2gY "Demo Video")
 
 ### Abstraction
 Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere.
@@ -38,7 +38,7 @@ The forgetting curve hypothesizes the decline of memory retention in time. A rel
 
 The app uses an algorithm of the forgetting curve and shows it through a list view indicating when and what words should be re-memorized again. By doing so, these words move from short-term memory to long-term memory according to the forgetting curve hypothesis.
 
-| ![screenshot](/portfolio/assets/forgettenCurve.jpg) | ![screenshot](/portfolio/assets/memorizedSteps.jpg) |
+| ![screenshot](/img/forgettenCurve.jpg) | ![screenshot](/img/memorizedSteps.jpg) |
 | ----------- | ----------- |
 
 
@@ -50,7 +50,7 @@ In the screen [Fig.3], it composes of 5 parts.
 In the top of the screen, there are three things are indicated; “Num of Wrong”, “Num of Current”, and “Elapsed time”. The “Num of Wrong” indicates how many times the user fail to remind the meaning of the word. And “Num of Current” is how many times a user succeed to correct meaning of the word. And the last “Elapsed time” is that how long has been elapsed since the user memorized the word.
 The next section is meaning and the blue box below the meaning section is for extra meaning section. If you touch the box, then next screen shows to add more extra meaning if you want. [Fig.4] Insert extra meaning
 
-| ![screenshot](/portfolio/assets/FlashCard.jpg) | ![screenshot](/portfolio/assets/InsertExtraMean.jpg) |
+| ![screenshot](/img/FlashCard.jpg) | ![screenshot](/img/InsertExtraMean.jpg) |
 | ----------- | ----------- |
 
 #### Multiple-choice questions
@@ -61,7 +61,7 @@ The screen shows if you consequently make wrong answers few times, then the scre
 #### Setting
 Users are able to customize the design of screen by changing configuration through a setting screen [Fig.6]
 
-| ![screenshot](/portfolio/assets/multiChoiceQuestion.jpg) |![screenshot](/portfolio/assets/SettingScreen.jpg) |
+| ![screenshot](/img/multiQuestion.jpg) |![screenshot](/img/SettingScreen.jpg) |
 | ----------- | ----------- |
 
 As you see in the [Fig.6], you can change a configuration of the app such as whether repeating the word,
@@ -70,7 +70,7 @@ enable or disable multiple-choice quiz, timer, whether words show randomly or no
 #### Add and Delete words
 For user convenience, the app provides two ways to add and delete word or word lists.
 
-![screenshot](/portfolio/assets/AddDelWord.jpg)
+![screenshot](/img/AddDelWord.jpg)
 
 Users are able to add new word lists with the process described above [Fig.7]. However, users must write
 their own word lists with format “cvs” which is a using „,” to separate word and meaning using Excel or any editor. Users are simply add a word individually without adding a new word list [Fig.8]
