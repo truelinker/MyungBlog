@@ -36,7 +36,7 @@ In the code used as an example, two enum define hpp files are read.
 [3] Specifies the log file location to be analyzed.
 
 
-![screenshot](/portfolio/assets/DiagramParseScript.png)
+![screenshot](/img/DiagramParseScript.png)
 
 ### Result
 
@@ -44,4 +44,4 @@ The log file in the example below and the file filtered by the parser program ca
 https://github.com/truelinker/TraceParser/blob/main/LogExample.txt
 https://github.com/truelinker/TraceParser/blob/main/LogExample.txtFilterEnumID.txt
 And you can see in the picture below that a numeric enum value is converted to an enum string.
-![screenshot](/portfolio/assets/EnumString.png)
+![screenshot](/img/EnumString.png)
