@@ -28,5 +28,6 @@ Using the WebRTC open source, I'd modified to implment my own p2p video chat app
 ![How it works](/img/howWebRTCworks.jpg)
 ---
 The following video shows the implementation.
+![screenshot](/img/WebRTCDemo2.jpg)
 [![Demo video](/img/webrtc_demo.jpg)](https://www.youtube.com/watch?v=PuphKiK7xmE "Demo Video")
 
