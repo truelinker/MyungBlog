@@ -8,20 +8,20 @@
   <meta property="og:title" content="Web RTC" />
 <meta property="og:description" content="Web RTC Using the WebRTC open source, I&rsquo;d modified to implment my own p2p video chat application between the android native app and chrom web app.
 Github : https://github.com/truelinker/webrtc_p2pvideo
-How it works They connect to a room created by a server such as node.js and exchange information such as each other&rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information." />
+How it works Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other&rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://truelinker.github.io/MyungBlog/portfolio/webrtc/" /><meta property="og:image" content="https://truelinker.github.io/portfolio/assets/tachyons-thumbnail.png" /><meta property="og:image" content="https://truelinker.github.io/portfolio/assets/tachyons-logo-script-feature.png" /><meta property="article:section" content="portfolio" />
 <meta property="article:published_time" content="2022-08-30T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-08-30T00:00:00+00:00" />
-<meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/logparser/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/secure-drive/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/vocamaster/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/tachyons-for-style/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/tachyons-for-style/" />
+<meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/logparser/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/secure-drive/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/vocamaster/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/tachyons-for-style/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/css-grid-scaffold/" />
 
 
   <meta itemprop="name" content="Web RTC">
 <meta itemprop="description" content="Web RTC Using the WebRTC open source, I&rsquo;d modified to implment my own p2p video chat application between the android native app and chrom web app.
 Github : https://github.com/truelinker/webrtc_p2pvideo
-How it works They connect to a room created by a server such as node.js and exchange information such as each other&rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information."><meta itemprop="datePublished" content="2022-08-30T00:00:00+00:00" />
+How it works Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other&rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information."><meta itemprop="datePublished" content="2022-08-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="81"><meta itemprop="image" content="https://truelinker.github.io/portfolio/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/portfolio/assets/tachyons-logo-script-feature.png">
+<meta itemprop="wordCount" content="92"><meta itemprop="image" content="https://truelinker.github.io/portfolio/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/portfolio/assets/tachyons-logo-script-feature.png">
 <meta itemprop="keywords" content="hugo-site," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://truelinker.github.io/portfolio/assets/tachyons-thumbnail.png"/>
@@ -29,7 +29,7 @@ How it works They connect to a room created by a server such as node.js and exch
 <meta name="twitter:title" content="Web RTC"/>
 <meta name="twitter:description" content="Web RTC Using the WebRTC open source, I&rsquo;d modified to implment my own p2p video chat application between the android native app and chrom web app.
 Github : https://github.com/truelinker/webrtc_p2pvideo
-How it works They connect to a room created by a server such as node.js and exchange information such as each other&rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information."/>
+How it works Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other&rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information."/>
 <meta name="twitter:site" content="@formspree"/>
 
   
@@ -82,10 +82,11 @@ How it works They connect to a room created by a server such as node.js and exch
 </blockquote>
 <h2 id="how-it-works">How it works</h2>
 <ol>
-<li>They connect to a room created by a server such as node.js and exchange information such as each other&rsquo;s network information (ip, port).</li>
+<li>Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other&rsquo;s network information (ip, port).</li>
 <li>When starting a video call, the call starts by exchanging each other&rsquo;s media information based on the given network information.
 <img src="https://truelinker.github.io/MyungBlog/img/howWebRTCworks.jpg" alt="How it works"></li>
 </ol>
+<hr>
 <p>The following video shows the implementation.
 <a href="https://www.youtube.com/watch?v=PuphKiK7xmE" title="Demo Video"><img src="https://truelinker.github.io/MyungBlog/img/webrtc_demo.jpg" alt="Demo video"></a></p>
 
@@ -97,7 +98,7 @@ How it works They connect to a room created by a server such as node.js and exch
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">1 minute read, 81 words</dd>
+    <dd class="fw5 ml0">1 minute read, 92 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
