@@ -2,7 +2,6 @@
 .DS_Store
 LICENSE
 archetypes/
-assets/
 config.toml
 content/
 data/
