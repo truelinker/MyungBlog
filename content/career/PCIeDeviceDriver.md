@@ -33,7 +33,7 @@ Assume the PCIe End point(EP) address is hardcorded to 0x10000.
 2. Write the configuration (such as bus master(DMA) enable and so on)
 3. Map the base address Registers to the system address.
 
-![screenshot](/img/BARmap.png)
+![screenshot](/img/BarMap.png)
 
 #### Now we can config a SATA port at the AHCI.
 
