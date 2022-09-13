@@ -17,6 +17,16 @@
     </item>
     
     <item>
+      <title>PCIe Device Driver</title>
+      <link>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</guid>
+      <description>Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
+Steps for implment the PCIe AHCI device driver Assume the PCIe End point(EP) address is hardcorded to 0x10000.</description>
+    </item>
+    
+    <item>
       <title>Secure Drive</title>
       <link>https://truelinker.github.io/MyungBlog/career/secure-drive/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
@@ -32,6 +42,15 @@
       
       <guid>https://truelinker.github.io/MyungBlog/career/sio/</guid>
       <description>I developed a serial communication protocol. As for the background, as the tester that uses only a single serial bus was newly introduced, I had to change the firmware to use it with the tester that uses the existing dual serial bus, and I was in charge of developing the fimrware. The purpose of this project is to change the firmware to work with testers with different serial communication methods on the same firmware.</description>
+    </item>
+    
+    <item>
+      <title>SMR</title>
+      <link>https://truelinker.github.io/MyungBlog/career/smr/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/smr/</guid>
+      <description>Participated in the drive managed SMR HDD development. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this.</description>
     </item>
     
     <item>
@@ -80,7 +99,7 @@ Abstraction Mobile devices are useful in many respects such as education, entert
       <pubDate>Tue, 19 Feb 2019 14:47:22 -0600</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/about/</guid>
-      <description> Welcome. Thank you for visiting my webpage. You can check my career and portpolio. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;Android application that helps memorize new vocabularies.&#34; </description>
+      <description> Welcome. Thank you for visiting my webpage. You can check my career and portpolio. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; &#34;SMR (Shingled Magnetic Recording) developed.&#34; &#34;PCIe device driver developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;Android application that helps memorize new vocabularies.&#34; </description>
     </item>
     
     <item>
