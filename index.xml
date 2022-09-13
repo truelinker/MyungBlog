@@ -76,15 +76,6 @@ Abstraction Mobile devices are useful in many respects such as education, entert
     </item>
     
     <item>
-      <title>Built-in Contact Form</title>
-      <link>https://truelinker.github.io/MyungBlog/career/built-in-contact-form/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://truelinker.github.io/MyungBlog/career/built-in-contact-form/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional Form This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used. Please use your actual email address.</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://truelinker.github.io/MyungBlog/contact/</link>
       <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
@@ -100,23 +91,6 @@ Abstraction Mobile devices are useful in many respects such as education, entert
       
       <guid>https://truelinker.github.io/MyungBlog/about/</guid>
       <description> Welcome. Thank you for visiting my webpage. You can check my career and portpolio. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; &#34;SMR (Shingled Magnetic Recording) developed.&#34; &#34;PCIe device driver developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;Android application that helps memorize new vocabularies.&#34; </description>
-    </item>
-    
-    <item>
-      <title>Typography Styles &amp; Element Examples</title>
-      <link>https://truelinker.github.io/MyungBlog/elements/</link>
-      <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
-      
-      <guid>https://truelinker.github.io/MyungBlog/elements/</guid>
-      <description>Font Sizes A A A A A A A A 6rem
-(96px) 5rem
-(80px) 3rem
-(48px) 2.25rem
-(36px) 1.5rem
-(24px) 1.25rem
-(20px) 1rem
-(16px) .875rem
-(14px) Type Samples Head&amp;shy;line Sub&amp;shy;head&amp;shy;line Level 1 Heading One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
     </item>
     
   </channel>
