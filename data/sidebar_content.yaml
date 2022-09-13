@@ -19,10 +19,10 @@ blog: # must match the slug of your blog
     show_sidebar_adunit: true # show ad container
   list_sidebar: # for list-sidebar layout
     image:
-    title: Myung Guk Lee3
+    title: Myung Guk Lee
     description: "I am a firmware developer who mainly uses C/C++ and python languages, 
     and I have developed firmware in storage and network related companies."
     author: 
     text_link_label: 
     text_link_url: /index.xml
-    show_sidebar_adunit: true # show ad container
+    show_sidebar_adunit: # show ad container

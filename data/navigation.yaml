@@ -11,12 +11,6 @@ header:
   - name: Portfolio
     title: Portfolio
     url: /portfolio/
-  - name: Contact
-    title: Contact Form
-    url: /contact/
-  - name: Elements
-    title: Element Page
-    url: /elements/
 
 footer:
   - name: Help
