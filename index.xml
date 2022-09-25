@@ -72,7 +72,7 @@ How it works Two peers (Android application and web application) connect to a ro
       <guid>https://truelinker.github.io/MyungBlog/portfolio/vocamaster/</guid>
       <description>Voca Master This is an Android application that I developed in 2011. This is an application that helps you memorize new English words.
 Github : https://github.com/truelinker/vocaMaster
-Abstraction Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere. For the summer personal project, I‟ve developed an education app for the Android platform; the app is for helping people to memorize vocabularies with spending remnant time such as during waiting a bus, waiting a meal, and so on.</description>
+Click the video demo above. ☝️ Abstraction Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere. For the summer personal project, I‟ve developed an education app for the Android platform; the app is for helping people to memorize vocabularies with spending remnant time such as during waiting a bus, waiting a meal, and so on.</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ Abstraction Mobile devices are useful in many respects such as education, entert
       <pubDate>Tue, 19 Feb 2019 14:47:22 -0600</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/about/</guid>
-      <description> Welcome. Thank you for visiting my webpage. You can check my career and portpolio. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; &#34;SMR (Shingled Magnetic Recording) developed.&#34; &#34;PCIe device driver developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;Android application that helps memorize new vocabularies.&#34; </description>
+      <description>Welcome. Thank you for visiting my webpage. Here is my career and profile list. If you click on each item, you can see more detailed information. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; &#34;SMR (Shingled Magnetic Recording) developed.&#34; &#34;PCIe device driver developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;</description>
     </item>
     
   </channel>
