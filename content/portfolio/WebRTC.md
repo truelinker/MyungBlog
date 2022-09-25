@@ -27,7 +27,8 @@ Using the WebRTC open source, I'd modified to implment my own p2p video chat app
 2.  When starting a video call, the call starts by exchanging each other's media information based on the given network information.
 ![How it works](/img/howWebRTCworks.jpg)
 ---
-The following video shows the implementation.
+The following video shows the demo. 
 ![screenshot](/img/WebRTCDemo2.jpg)
 [![Demo video](/img/webrtc_demo.jpg)](https://www.youtube.com/watch?v=PuphKiK7xmE "Demo Video")
+### Click the video demo above. ☝️
 

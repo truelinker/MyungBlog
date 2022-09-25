@@ -24,6 +24,8 @@ This is an Android application that I developed in 2011. This is an application 
 
 [![Demo video](/img/VocaMasterDemo.jpg)](https://www.youtube.com/watch?v=5WGz2HGq2gY "Demo Video")
 
+### Click the video demo above. ☝️
+
 ### Abstraction
 Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere.
 For the summer personal project, I‟ve developed an education app for the Android platform; the app is for helping people to memorize vocabularies with spending remnant time such as during waiting a bus, waiting a meal, and so on.
