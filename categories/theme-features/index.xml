@@ -13,7 +13,7 @@
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/career/ethernetswitch/</guid>
-      <description>When I was working at Dasan Networks ( https://en.wikipedia.org/wiki/DASAN_Networks ), I developed a Layer 2 switch device based on Dasan Networks&amp;rsquo; custom Linux using Broadcom and Marvell&amp;rsquo;s Layer 2 switch. In addition, I have developed DHCP and ARP and other functions. The following figure shows the Linux network stack of 24 port ethernet switch. Layer 2 switch SoCs provides basic functions such as RX/TX Ring Buffer and MAC address learning table as shown in the figure below.</description>
+      <description>When I was working at Dasan Networks ( https://en.wikipedia.org/wiki/DASAN_Networks ), I developed a Layer 2 switch device based on Dasan Networks&amp;rsquo; custom Linux using Broadcom and Marvell&amp;rsquo;s Layer 2 switch SoCs. In addition, I have developed DHCP and ARP and other functions. The following figure shows the Linux network stack of 24 port ethernet switch. Layer 2 switch SoCs provides basic functions such as RX/TX Ring Buffer and MAC address learning table as shown in the figure below.</description>
     </item>
     
     <item>
