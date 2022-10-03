@@ -19,7 +19,7 @@ layout: single
 ---
 
 
-### When I was working at Dasan Networks ( https://en.wikipedia.org/wiki/DASAN_Networks ), I developed a Layer 2 switch device based on Dasan Networks' custom Linux using Broadcom and Marvell's Layer 2 switch. In addition, I have developed DHCP and ARP and other functions.
+### When I was working at Dasan Networks ( https://en.wikipedia.org/wiki/DASAN_Networks ), I developed a Layer 2 switch device based on Dasan Networks' custom Linux using Broadcom and Marvell's Layer 2 switch SoCs. In addition, I have developed DHCP and ARP and other functions.
 ---
 
 The following figure shows the Linux network stack of 24 port ethernet switch.
