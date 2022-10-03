@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 18 Feb 2019 12:27:33 -0600</lastBuildDate><atom:link href="https://truelinker.github.io/MyungBlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Layer 2 switch development</title>
+      <link>https://truelinker.github.io/MyungBlog/career/ethernetswitch/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/ethernetswitch/</guid>
+      <description>When I was working at Dasan Networks, I developed a Layer 2 switch device based on Dasan Networks&amp;rsquo; custom Linux using Broadcom and Marvell&amp;rsquo;s Layer 2 switch. In addition, I have developed DHCP and ARP and other functions. The following figure shows the Linux network stack of 24 port ethernet switch. Layer 2 switch SoCs provides basic functions such as RX/TX Ring Buffer and MAC address learning table as shown in the figure below.</description>
+    </item>
+    
+    <item>
       <title>Log Parser</title>
       <link>https://truelinker.github.io/MyungBlog/portfolio/logparser/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
@@ -90,7 +99,7 @@ Click the video demo above. ☝️ Abstraction Mobile devices are useful in many
       <pubDate>Tue, 19 Feb 2019 14:47:22 -0600</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/about/</guid>
-      <description>Welcome. Thank you for visiting my webpage. Here is my career and profile list. If you click on each item, you can see more detailed information. Career Storage &#34;Security Features developed.&#34; &#34;Serial communication developed.&#34; &#34;SMR (Shingled Magnetic Recording) developed.&#34; &#34;PCIe device driver developed.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.&#34; Android Application &#34;</description>
+      <description>Welcome. Thank you for visiting my webpage. Here is my career and profile list. If you click on each item, you can see more detailed information. Career Storage &#34;Security Features development.&#34; &#34;Serial communication development.&#34; &#34;SMR (Shingled Magnetic Recording) development.&#34; &#34;PCIe device driver development.&#34; Networks &#34;Layer 2 Switch device development.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.</description>
     </item>
     
   </channel>
