@@ -16,6 +16,7 @@ footnoteReturnLinkContents = "&#8617;" # ↩
 paginate = 3
 preserveTaxonomyNames = true
 canonifyurls = true
+publishDir = "docs"
 
 [params]
   orgName = "Formspree"
