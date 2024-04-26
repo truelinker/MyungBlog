@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>NEON SIMD</title>
+      <link>https://truelinker.github.io/MyungBlog/career/neonsimd/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/neonsimd/</guid>
+      <description>Participated in the drive managed SMR HDD development. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this.</description>
+    </item>
+    
+    <item>
       <title>PCIe Device Driver</title>
       <link>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
@@ -108,7 +117,7 @@ Click the video demo above. ☝️ Abstraction Mobile devices are useful in many
       <pubDate>Tue, 19 Feb 2019 14:47:22 -0600</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/about/</guid>
-      <description>Welcome. Thank you for visiting my webpage. Here is my career and profile list. If you click on each item, you can see more detailed information. Career 5G ORAN Career Storage &#34;Security Features development.&#34; &#34;Serial communication development.&#34; &#34;SMR (Shingled Magnetic Recording) development.&#34; &#34;PCIe device driver development.&#34; Networks &#34;Layer 2 Switch device development.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.</description>
+      <description>Welcome. Thank you for visiting my webpage. Here is my career and profile list. If you click on each item, you can see more detailed information. Career 5G ORAN &#34;NEON SIMD development.&#34; Career Storage &#34;Security Features development.&#34; &#34;Serial communication development.&#34; &#34;SMR (Shingled Magnetic Recording) development.&#34; &#34;PCIe device driver development.&#34; Networks &#34;Layer 2 Switch device development.&#34; Portpolio Log Parser &#34;Log Parser developed using Python script&#34; p2p video chat &#34;p2p video chat application between android and web application using the webRTC.</description>
     </item>
     
   </channel>
