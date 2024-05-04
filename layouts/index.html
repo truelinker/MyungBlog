@@ -3,17 +3,167 @@
   <section class="page-content mw9 center">
     <div class="flex-l items-center">
       <div class="mh5-l w-50-l">
-        {{ with .Params.title }}<h1 class="f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid tracked-tight">{{ . }}</h1>{{ end }}
-        {{ with .Params.subtitle }}<h2 class="f7 fw7 measure mv0 ttu tracked">{{ . }}</h2>{{ end }}
-        {{ with .Params.description }}<p class="f4 measure mv4 lh-copy black-50">{{ . | markdownify }}</p>{{ end }}
-        {{ if .Params.show_action_link }}<a class="action {{ .Params.action_type }}" href="{{ .Params.action_link }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
+        {{ with .Params.title }}
+        <h1 class="f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid tracked-tight">
+          {{ . }}
+        </h1>
+        {{ end }} {{ with .Params.subtitle }}
+        <h2 class="f7 fw7 measure mv0 ttu tracked">{{ . }}</h2>
+        {{ end }} {{ with .Params.description }}
+        <p class="f4 measure mv4 lh-copy black-50">{{ . | markdownify }}</p>
+        {{ end }} {{ if .Params.show_action_link }}<a
+          class="action {{ .Params.action_type }}"
+          href="{{ .Params.action_link }}"
+          >{{ .Params.action_label | safeHTML }}</a
+        >{{ end }}
       </div>
       <div class="tr w-50-l">
-      {{ with .Params.images }}
-        {{ range first 1 . }}<img class="mv0 w-70-m" src="{{ . }}"/>{{ end }}
-      {{ end }}
+        {{ with .Params.images }} {{ range first 1 . }}<img
+          class="mv0 w-70-m"
+          src="{{ . }}"
+        />{{ end }} {{ end }}
+      </div>
+    </div>
+    <hr class="f4 ba b--black-10 mt5 mb4 ml0" />
+    <div class="flex-l items-start">
+      <div class="mr4-l w-two-thirds-l">
+        <h6 class="f7 fw7 black-20 mt4 tracked ttu lh-title">Career</h6>
+        <h5 class="f5 mv4 lh-title">ORAN RF SoC</h5>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/career/Neonsimd/">
+            <img
+              src="/about/assets/neon-simd.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"NEON SIMD development."</span>
+          </a>
+        </p>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/career/FileSystem/">
+            <img
+              src="/about/assets/filesystem.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"File System development."</span>
+          </a>
+        </p>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/career/FlashWriter/">
+            <img
+              src="/about/assets/flashwriter.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"Flash Writer development."</span>
+          </a>
+        </p>
+        <h6 class="f7 fw7 black-20 mt4 tracked ttu lh-title">Career</h6>
+        <h5 class="f5 mv4 lh-title">Storage</h5>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/career/secure-drive/">
+            <img
+              src="/about/assets/SecureDriveLogo.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"Security Features development."</span>
+          </a>
+        </p>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/career/sio/">
+            <img
+              src="/about/assets/sioLogo.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"Serial communication development."</span>
+          </a>
+        </p>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/career/smr/">
+            <img
+              src="/about/assets/smrLogo.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i"
+              >"SMR (Shingled Magnetic Recording) development."</span
+            >
+          </a>
+        </p>
+        <p class="f6 measure lh-copy cf">
+          <a
+            href="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/"
+          >
+            <img
+              src="/about/assets/pcieLog.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"PCIe device driver development."</span>
+          </a>
+        </p>
+        <h5 class="f5 mv4 lh-title">Networks</h5>
+        <p class="f6 measure lh-copy cf">
+          <a
+            href="https://truelinker.github.io/MyungBlog/career/ethernetswitch/"
+          >
+            <img
+              src="/about/assets/L2Switch.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"Layer 2 Switch device development."</span>
+          </a>
+        </p>
+      </div>
+      <div class="mh4-l w-third-l">
+        <h6 class="f7 fw7 black-20 mt4 tracked ttu lh-title">Portpolio</h6>
+        <h5 class="f5 mv4 lh-title">Log Parser</h5>
+        <p class="f6 measure lh-copy cf">
+          <a href="http://truelinker.github.io/MyungBlog/portfolio/logparser/">
+            <img
+              src="/about/assets/LogParserLogo.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i">"Log Parser developed using Python script"</span>
+          </a>
+        </p>
+        <h5 class="f5 mv4 lh-title">p2p video chat</h5>
+        <p class="f6 measure lh-copy cf">
+          <a href="https://truelinker.github.io/MyungBlog/portfolio/webrtc/">
+            <img
+              src="/about/assets/webrtcLogo.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i"
+              >"p2p video chat application between android and web application
+              using the webRTC."</span
+            >
+          </a>
+        </p>
+        <h5 class="f5 mv4 lh-title">Android Application</h5>
+        <p class="f6 measure lh-copy cf">
+          <a
+            href="https://truelinker.github.io/MyungBlog/portfolio/vocamaster/"
+          >
+            <img
+              src="/about/assets/vocaMasterLogo.png"
+              align="left"
+              class="mw-100 w3 mr3 db br3 br--left"
+            />
+            <span class="i"
+              >"Android application that helps memorize new vocabularies."</span
+            >
+          </a>
+        </p>
       </div>
     </div>
   </section>
 </main>
+
 {{ end }}

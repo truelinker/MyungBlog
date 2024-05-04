@@ -2,9 +2,9 @@ header:
   - name: Home
     title: Home Page
     url: /
-  - name: About
-    title: About Blogophonic
-    url: /about/
+  #- name: About
+  #  title: About Blogophonic
+  #  url: /about/
   - name: Career
     title: Career
     url: /career/

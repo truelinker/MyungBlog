@@ -6,24 +6,24 @@
   <title>NEON SIMD | Blogophonic</title>
   <meta name="description" content="" />
   <meta property="og:title" content="NEON SIMD" />
-<meta property="og:description" content="Participated in the drive managed SMR HDD development. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this." />
+<meta property="og:description" content="To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://truelinker.github.io/MyungBlog/career/neonsimd/" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png" /><meta property="article:section" content="career" />
-<meta property="article:published_time" content="2022-08-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-08-30T00:00:00+00:00" />
-<meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/ethernetswitch/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/logparser/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/secure-drive/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/sio/" />
+<meta property="article:published_time" content="2024-04-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-29T00:00:00+00:00" />
+<meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/filesystem/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/flashwriter/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/ethernetswitch/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/logparser/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/" />
 
 
   <meta itemprop="name" content="NEON SIMD">
-<meta itemprop="description" content="Participated in the drive managed SMR HDD development. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this."><meta itemprop="datePublished" content="2022-08-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="153"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
+<meta itemprop="description" content="To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this."><meta itemprop="datePublished" content="2024-04-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-04-29T00:00:00+00:00" />
+<meta itemprop="wordCount" content="163"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
 <meta itemprop="keywords" content="hugo-site," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"/>
 
 <meta name="twitter:title" content="NEON SIMD"/>
-<meta name="twitter:description" content="Participated in the drive managed SMR HDD development. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this."/>
+<meta name="twitter:description" content="To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this."/>
 <meta name="twitter:site" content="@formspree"/>
 
   
@@ -44,8 +44,6 @@
       
       <a class="link f6 f5-l dib pv1 ph2" href="https://truelinker.github.io/MyungBlog/" title="Home Page">Home</a>
       
-      <a class="link f6 f5-l dib pv1 ph2" href="https://truelinker.github.io/MyungBlog/about/" title="About Blogophonic">About</a>
-      
       <a class="link f6 f5-l dib pv1 ph2" href="https://truelinker.github.io/MyungBlog/career/" title="Career">Career</a>
       
       <a class="link f6 f5-l dib pv1 ph2" href="https://truelinker.github.io/MyungBlog/portfolio/" title="Portfolio">Portfolio</a>
@@ -60,23 +58,23 @@
     <article class="post-content pa0 ph4-l">
       <header class="post-header">
         <h1 class="f1 lh-solid measure-narrow mb3">NEON SIMD</h1>
-        <h4 class="f4 mt0 mb4 lh-title measure">NEON SIMD</h4>
+        <h4 class="f4 mt0 mb4 lh-title measure">Improved DPD (Digital Predistortion) algorithm performance by utilizing ARM&#39;s NEON registers</h4>
         <p class="f6 measure lh-copy mv1">By Myung Guk Lee in <a href="https://truelinker.github.io/MyungBlog/categories/theme-features">Theme Features</a> </p>
-        <p class="f7 db mv0 ttu">August 30, 2022</p>
+        <p class="f7 db mv0 ttu">April 29, 2024</p>
       </header>
       <section class="post-body pt5 pb4">
-        <h3 id="participated-in-the-drive-managed-smr-hdd-development">Participated in the drive managed SMR HDD development.</h3>
+        <h3 id="to-improve-the-performance-of-the-dpd-digital-predistortion-algorithm-we-created-c-language-functions-using-neon-registers">To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers.</h3>
 <p>Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this. If this mapping table is managed by the host, it is a host managed SMR drive, and if managed by the drive, it becomes a drive managed SMR drive. I joined SMR development late because of other projects I participated, and focused on fixing bugs that occurred during validation while most of the design and development were completed.</p>
 
         
         <details closed class="f6 fw7 input-reset">
   <dl class="f6 lh-copy">
     <dt class="fw7">Posted on:</dt>
-    <dd class="fw5 ml0">August 30, 2022</dd>
+    <dd class="fw5 ml0">April 29, 2024</dd>
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">1 minute read, 153 words</dd>
+    <dd class="fw5 ml0">1 minute read, 163 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
@@ -99,11 +97,11 @@
   <dl class="f6 lh-copy">
     <dt class="fw7">See Also:</dt>
     
+    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/flashwriter/">Flash Writer</a></dd>
+    
+    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/filesystem/">Flash FileSystem</a></dd>
+    
     <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/portfolio/vocamaster/">Word Memorization App</a></dd>
-    
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/portfolio/webrtc/">Web RTC</a></dd>
-    
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/smr/">SMR</a></dd>
     
   </dl>
 </details>
@@ -113,11 +111,11 @@
         <div class="post-pagination dt w-100 mt4 mb2">
   
     <a class="prev dtc pr2 tl v-top fw6"
-    href="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/">&larr; PCIe Device Driver</a>
+    href="https://truelinker.github.io/MyungBlog/career/neonintrinsics/">&larr; NeonIntrinsics</a>
   
   
     <a class="next dtc pl2 tr v-top fw6"
-    href="https://truelinker.github.io/MyungBlog/career/ethernetswitch/">Layer 2 switch development &rarr;</a>
+    href="https://truelinker.github.io/MyungBlog/career/flashwriter/">Flash Writer &rarr;</a>
   
 </div>
 
