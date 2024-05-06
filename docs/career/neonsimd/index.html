@@ -6,7 +6,7 @@
   <title>NEON SIMD | Blogophonic</title>
   <meta name="description" content="" />
   <meta property="og:title" content="NEON SIMD" />
-<meta property="og:description" content="To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this." />
+<meta property="og:description" content="In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once. Background knowledges DPD (Digital Predistortion) Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA, effectively counteracting the nonlinear introduced by the amplifier." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://truelinker.github.io/MyungBlog/career/neonsimd/" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png" /><meta property="article:section" content="career" />
 <meta property="article:published_time" content="2024-04-29T00:00:00+00:00" />
@@ -15,15 +15,15 @@
 
 
   <meta itemprop="name" content="NEON SIMD">
-<meta itemprop="description" content="To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this."><meta itemprop="datePublished" content="2024-04-29T00:00:00+00:00" />
+<meta itemprop="description" content="In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once. Background knowledges DPD (Digital Predistortion) Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA, effectively counteracting the nonlinear introduced by the amplifier."><meta itemprop="datePublished" content="2024-04-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="163"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
+<meta itemprop="wordCount" content="283"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
 <meta itemprop="keywords" content="hugo-site," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"/>
 
 <meta name="twitter:title" content="NEON SIMD"/>
-<meta name="twitter:description" content="To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this."/>
+<meta name="twitter:description" content="In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once. Background knowledges DPD (Digital Predistortion) Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA, effectively counteracting the nonlinear introduced by the amplifier."/>
 <meta name="twitter:site" content="@formspree"/>
 
   
@@ -63,8 +63,44 @@
         <p class="f7 db mv0 ttu">April 29, 2024</p>
       </header>
       <section class="post-body pt5 pb4">
-        <h3 id="to-improve-the-performance-of-the-dpd-digital-predistortion-algorithm-we-created-c-language-functions-using-neon-registers">To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers.</h3>
-<p>Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this. If this mapping table is managed by the host, it is a host managed SMR drive, and if managed by the drive, it becomes a drive managed SMR drive. I joined SMR development late because of other projects I participated, and focused on fixing bugs that occurred during validation while most of the design and development were completed.</p>
+        <h2 id="in-order-to-reduce-the-execution-time-of-the-dpd-digital-predistortion-algorithm-the-code-was-optimized-to-use-neon-registers-which-enable-execution-of-multiple-data-at-once">In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once.</h2>
+<h3 id="background-knowledges">Background knowledges</h3>
+<ol>
+<li>
+<p>DPD (Digital Predistortion)
+Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA,  effectively counteracting the nonlinear introduced by the amplifier. By predistortion the signal in a controlled manner, the output from the PA becomes more linear, resulting in improved signal quality.
+<img src="https://truelinker.github.io/MyungBlog/img/dpd.png" alt="screenshot"></p>
+</li>
+<li>
+<p>ARM NEON
+NEON is a SIMD(Single Instruction Multiple Data) architecture extension for the ARM processor. SIMD allows the same operation to be performed on multiple data in paralle, which can significantly improve performance for certain types of workloads.</p>
+</li>
+</ol>
+<p>The SoC is ARM Cortex-A series cores feature NEON-Coprocessor. This NEON coprocessor has 32 128-bit SIMD registers. Using these SIMD registers, parallel processing is possible as shown below.
+<img src="https://truelinker.github.io/MyungBlog/img/neonsimd.png" alt="screenshot"></p>
+<h3 id="implementation">Implementation</h3>
+<ol>
+<li>
+<p>Data Alignment
+To load multiple data into NEON registers, a NEON register size is is 128-bit. these data must be placed in contigous memory space. Additionally, DATA used in DPD is a complex type that combines real and image values. Since ARM armv-8 cannot perform operations on this complex type, dividing it into real and image parts must also be done.
+<img src="https://truelinker.github.io/MyungBlog/img/dividrealandimage.png" alt="screenshot"></p>
+</li>
+<li>
+<p>Loop Unrolling &amp; Unwinding
+Unrolling the loop and then grouping these unrolled iterations into a larger loop. This technique has several advantages:</p>
+<ul>
+<li>Avoids branching,</li>
+<li>Keep all temporary results into registers.</li>
+<li>Data dependencies from previous versions help reduce pipeline latency.
+<img src="https://truelinker.github.io/MyungBlog/img/unrollingandunwinding.png" alt="screenshot"></li>
+</ul>
+</li>
+<li>
+<p>Optimizing the matrix operations using 4x4 submatrices
+By unrolling and unwinding with a 4x4 submatrix, performance has been improved in matrix multiplication operations.
+<img src="https://truelinker.github.io/MyungBlog/img/4_4submatrix.png" alt="screenshot"></p>
+</li>
+</ol>
 
         
         <details closed class="f6 fw7 input-reset">
@@ -74,7 +110,7 @@
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">1 minute read, 163 words</dd>
+    <dd class="fw5 ml0">2 minute read, 283 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
@@ -111,7 +147,7 @@
         <div class="post-pagination dt w-100 mt4 mb2">
   
     <a class="prev dtc pr2 tl v-top fw6"
-    href="https://truelinker.github.io/MyungBlog/career/neonintrinsics/">&larr; NeonIntrinsics</a>
+    href="https://truelinker.github.io/MyungBlog/career/ethernetswitch/">&larr; Layer 2 switch development</a>
   
   
     <a class="next dtc pl2 tr v-top fw6"

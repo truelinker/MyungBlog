@@ -33,16 +33,7 @@ Boot Sequence The bootloader in ROM has the simplest structure possible due to t
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/career/neonsimd/</guid>
-      <description>To improve the performance of the DPD (Digital Predistortion) algorithm, we created C language functions using NEON registers. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this.</description>
-    </item>
-    
-    <item>
-      <title>NeonIntrinsics</title>
-      <link>https://truelinker.github.io/MyungBlog/career/neonintrinsics/</link>
-      <pubDate>Tue, 19 Mar 2024 14:29:24 -0700</pubDate>
-      
-      <guid>https://truelinker.github.io/MyungBlog/career/neonintrinsics/</guid>
-      <description></description>
+      <description>In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once. Background knowledges DPD (Digital Predistortion) Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA, effectively counteracting the nonlinear introduced by the amplifier.</description>
     </item>
     
     <item>
