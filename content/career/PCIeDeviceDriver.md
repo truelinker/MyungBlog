@@ -23,6 +23,10 @@ layout: single
 
 A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
 
+### The flow of the PCIe port initialziation
+PCIe controller initialization is done in the order shown below. If no ERROR occurs during all of this, the PCIe port is ready for data transfer.
+![screenshot](/img/pcie_port_open_flow.png)
+
 ### Steps for implment the PCIe AHCI device driver
 Assume the PCIe End point(EP) address is hardcorded to 0x10000.
 ![screenshot](/img/PCIeOverall.png)
