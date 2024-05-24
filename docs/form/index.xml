@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forms on Blogophonic</title>
-    <link>http://localhost:1313/MyungBlog/form/</link>
+    <link>https://truelinker.github.io/MyungBlog/form/</link>
     <description>Recent content in Forms on Blogophonic</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Feb 2019 13:38:41 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/MyungBlog/form/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://truelinker.github.io/MyungBlog/form/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/MyungBlog/contact/</link>
+      <link>https://truelinker.github.io/MyungBlog/contact/</link>
       <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
-      <guid>http://localhost:1313/MyungBlog/contact/</guid>
+      <guid>https://truelinker.github.io/MyungBlog/contact/</guid>
       <description>** Contact page don&amp;rsquo;t contain a body, just the front matter above. See form.html in the layouts folder **</description>
     </item>
   </channel>
