@@ -17,11 +17,38 @@
     </item>
     
     <item>
+      <title>Bootloader</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/bootloader/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/bootloader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Digital Signal Processing</title>
       <link>https://truelinker.github.io/MyungBlog/tags/digital-signal-processing/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/tags/digital-signal-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded Systems</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/embedded-systems/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/embedded-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flash Memory</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/flash-memory/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/flash-memory/</guid>
       <description></description>
     </item>
     
@@ -49,6 +76,60 @@
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/tags/performance-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RTOS</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/rtos/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/rtos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Programming</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/system-programming/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/system-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AHCI</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/ahci/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/ahci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Device Drivers</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/device-drivers/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/device-drivers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PCIe</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/pcie/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/pcie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage Systems</title>
+      <link>https://truelinker.github.io/MyungBlog/tags/storage-systems/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/tags/storage-systems/</guid>
       <description></description>
     </item>
     

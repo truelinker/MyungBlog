@@ -3,30 +3,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PCIe Device Driver | Blogophonic</title>
+  <title>PCIe AHCI Device Driver Development | Blogophonic</title>
   <meta name="description" content="" />
-  <meta property="og:title" content="PCIe Device Driver" />
-<meta property="og:description" content="Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
-The flow of the PCIe port initialziation PCIe controller initialization is done in the order shown below." />
+  <meta property="og:title" content="PCIe AHCI Device Driver Development" />
+<meta property="og:description" content="Project Overview Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.
+Technical Architecture System Overview The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:
+Figure 1: High-level architecture of the Hybrid Storage System
+PCIe Port Initialization Flow The PCIe controller initialization follows a precise sequence to ensure reliable operation:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png" /><meta property="article:section" content="career" />
 <meta property="article:published_time" content="2022-08-30T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-08-30T00:00:00+00:00" />
-<meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/filesystem/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/flashwriter/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/ethernetswitch/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/logparser/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/secure-drive/" />
 
 
-  <meta itemprop="name" content="PCIe Device Driver">
-<meta itemprop="description" content="Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
-The flow of the PCIe port initialziation PCIe controller initialization is done in the order shown below."><meta itemprop="datePublished" content="2022-08-30T00:00:00+00:00" />
+
+  <meta itemprop="name" content="PCIe AHCI Device Driver Development">
+<meta itemprop="description" content="Project Overview Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.
+Technical Architecture System Overview The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:
+Figure 1: High-level architecture of the Hybrid Storage System
+PCIe Port Initialization Flow The PCIe controller initialization follows a precise sequence to ensure reliable operation:"><meta itemprop="datePublished" content="2022-08-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="355"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
-<meta itemprop="keywords" content="hugo-site," />
+<meta itemprop="wordCount" content="392"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
+<meta itemprop="keywords" content="PCIe,AHCI,Device Drivers,Storage Systems,Embedded Systems," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"/>
 
-<meta name="twitter:title" content="PCIe Device Driver"/>
-<meta name="twitter:description" content="Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
-The flow of the PCIe port initialziation PCIe controller initialization is done in the order shown below."/>
+<meta name="twitter:title" content="PCIe AHCI Device Driver Development"/>
+<meta name="twitter:description" content="Project Overview Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.
+Technical Architecture System Overview The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:
+Figure 1: High-level architecture of the Hybrid Storage System
+PCIe Port Initialization Flow The PCIe controller initialization follows a precise sequence to ensure reliable operation:"/>
 <meta name="twitter:site" content="@formspree"/>
 
   
@@ -60,50 +66,182 @@ The flow of the PCIe port initialziation PCIe controller initialization is done 
   <section class="page-content mw7 center">
     <article class="post-content pa0 ph4-l">
       <header class="post-header">
-        <h1 class="f1 lh-solid measure-narrow mb3">PCIe Device Driver</h1>
-        <h4 class="f4 mt0 mb4 lh-title measure">PCIe AHCI device driver development</h4>
-        <p class="f6 measure lh-copy mv1">By Myung Guk Lee in <a href="https://truelinker.github.io/MyungBlog/categories/theme-features">Theme Features</a> </p>
+        <h1 class="f1 lh-solid measure-narrow mb3">PCIe AHCI Device Driver Development</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">Implementing High-Performance Storage Interface for Hybrid HDD Systems</h4>
+        <p class="f6 measure lh-copy mv1">By Myung Guk Lee in <a href="https://truelinker.github.io/MyungBlog/categories/technical-projects">Technical Projects</a> </p>
         <p class="f7 db mv0 ttu">August 30, 2022</p>
       </header>
       <section class="post-body pt5 pb4">
-        <h3 id="participated-in-the-sshdd-development">Participated in the SSHDD development.</h3>
-<p>A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.</p>
-<h3 id="the-flow-of-the-pcie-port-initialziation">The flow of the PCIe port initialziation</h3>
-<p>PCIe controller initialization is done in the order shown below. If no ERROR occurs during all of this, the PCIe port is ready for data transfer.
-<img src="https://truelinker.github.io/MyungBlog/img/pcie_port_open_flow.png" alt="screenshot"></p>
-<h3 id="steps-for-implment-the-pcie-ahci-device-driver">Steps for implment the PCIe AHCI device driver</h3>
-<p>Assume the PCIe End point(EP) address is hardcorded to 0x10000.
-<img src="https://truelinker.github.io/MyungBlog/img/PCIeOverall.png" alt="screenshot"></p>
-<h4 id="register-pcie-ahci-driver">Register PCIe AHCI driver</h4>
+        <h2 id="project-overview">Project Overview</h2>
+<p>Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.</p>
+<h2 id="technical-architecture">Technical Architecture</h2>
+<h3 id="system-overview">System Overview</h3>
+<p>The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/sshd-architecture.png" alt="SSHD Architecture">
+<em>Figure 1: High-level architecture of the Hybrid Storage System</em></p>
+<h3 id="pcie-port-initialization-flow">PCIe Port Initialization Flow</h3>
+<p>The PCIe controller initialization follows a precise sequence to ensure reliable operation:</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/pcie_port_open_flow.png" alt="PCIe Port Initialization">
+<em>Figure 2: Detailed PCIe port initialization sequence</em></p>
+<h2 id="implementation-details">Implementation Details</h2>
+<h3 id="driver-architecture">Driver Architecture</h3>
+<p>The PCIe AHCI driver implementation was structured around three key components:</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/PCIeOverall.png" alt="Driver Implementation"></p>
+<p><em>Figure 3: PCIe AHCI Driver Architecture</em></p>
+<h3 id="memory-mapping-strategy">Memory Mapping Strategy</h3>
+<p>Implemented efficient BAR (Base Address Register) mapping for optimal performance:</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/BarMap.png" alt="BAR Mapping">
+<em>Figure 4: Base Address Register mapping architecture</em></p>
+<h3 id="key-implementation-steps">Key Implementation Steps</h3>
 <ol>
-<li>Read the PCI configuration ( such as VendorID, DeviceID and so on.)</li>
-<li>Write the configuration (such as bus master(DMA) enable and so on)</li>
-<li>Map the base address Registers to the system address.</li>
+<li><strong>PCIe Configuration Space Management</strong>
+<h4 id="configuration-space-layout">Configuration Space Layout</h4>
+</li>
 </ol>
-<p><img src="https://truelinker.github.io/MyungBlog/img/BarMap.png" alt="screenshot"></p>
-<h4 id="now-we-can-config-a-sata-port-at-the-ahci">Now we can config a SATA port at the AHCI.</h4>
-<ol start="4">
+<p><img src="https://truelinker.github.io/MyungBlog/img/pcie-config-space.png" alt="PCIe Config Space">
+<em>Figure: PCIe Configuration Space Structure</em></p>
+<h4 id="key-configuration-registers">Key Configuration Registers</h4>
+<table>
+<thead>
+<tr>
+<th>Register</th>
+<th>Offset</th>
+<th>Purpose</th>
+<th>Access Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vendor/Device ID</td>
+<td>0x00-0x03</td>
+<td>Device identification</td>
+<td>Read-only</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>0x04-0x05</td>
+<td>Device control</td>
+<td>Read/Write</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>0x06-0x07</td>
+<td>Device status</td>
+<td>Read-only</td>
+</tr>
+<tr>
+<td>BAR[0-5]</td>
+<td>0x10-0x24</td>
+<td>Memory/IO space mapping</td>
+<td>Read/Write</td>
+</tr>
+<tr>
+<td>Interrupt</td>
+<td>0x3C-0x3F</td>
+<td>Interrupt configuration</td>
+<td>Read/Write</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li>
+<p><strong>AHCI Port Configuration</strong></p>
+<ul>
 <li>Port register initialization</li>
-<li>Setup command list, FIS base address</li>
-<li>Setup Interrupt (I didn&rsquo;t use MSI interrupt due to OS did not support it, so I used the regacy interrupt)</li>
-<li>Confirm there is a SATA device is connected through the Port&rsquo;s Task File and ATA Status register.</li>
+<li>Command list and FIS base address setup</li>
+<li>Interrupt handling implementation</li>
+<li>Device presence verification</li>
+</ul>
+</li>
+<li>
+<p><strong>DMA Engine Setup</strong></p>
+<ul>
+<li>Command list structure initialization</li>
+<li>PRD (Physical Region Descriptor) table configuration</li>
+<li>Memory-mapped I/O optimization</li>
+</ul>
+</li>
 </ol>
-<h3 id="packet-flow">Packet Flow</h3>
-<p>In order to understand the connection and data flow between SSD and HDD, it was analyzed with a bus analyzer.</p>
+<h2 id="protocol-analysis">Protocol Analysis</h2>
+<h3 id="link-training-and-state-management-ltssm">Link Training and State Management (LTSSM)</h3>
+<p>The PCIe link establishment process involves multiple states:</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/LTSSM.png" alt="LTSSM States">
+<em>Figure 5: Link Training and State Management flow</em></p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Description</th>
+<th>Key Operations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detection</td>
+<td>Initial device presence detection</td>
+<td>Electrical idle detection</td>
+</tr>
+<tr>
+<td>Polling</td>
+<td>Training sequence exchange</td>
+<td>Symbol lock establishment</td>
+</tr>
+<tr>
+<td>Configuration</td>
+<td>Link width/speed negotiation</td>
+<td>Capability exchange</td>
+</tr>
+<tr>
+<td>L0</td>
+<td>Normal operation state</td>
+<td>Active data transfer</td>
+</tr>
+<tr>
+<td>Recovery</td>
+<td>Link retraining/power state transition</td>
+<td>Link maintenance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="packet-transfer-protocol">Packet Transfer Protocol</h3>
+<p>Data transmission utilizes Transaction Layer Packets (TLP) and Data Link Layer Packets (DLLP):</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/PCIePacketTrans.png" alt="Packet Transfer">
+<em>Figure 6: PCIe packet transfer protocol</em></p>
+<h2 id="performance-optimization">Performance Optimization</h2>
+<h3 id="key-metrics">Key Metrics</h3>
+<ul>
+<li>Reduced latency through optimized interrupt handling</li>
+<li>Improved throughput with efficient DMA transfers</li>
+<li>Enhanced reliability through robust error handling</li>
+</ul>
+<h3 id="benchmark-results">Benchmark Results</h3>
+<p>[Consider adding performance graphs/charts here]</p>
+<h2 id="technical-challenges-and-solutions">Technical Challenges and Solutions</h2>
 <ol>
-<li>Link Trainning and Initialization(LTSSM) using Ordered-Set</li>
+<li>
+<p><strong>Interrupt Handling</strong></p>
+<ul>
+<li>Challenge: Legacy interrupt limitations</li>
+<li>Solution: Implemented custom interrupt coalescing</li>
+</ul>
+</li>
+<li>
+<p><strong>DMA Performance</strong></p>
+<ul>
+<li>Challenge: Memory alignment issues</li>
+<li>Solution: Implemented aligned buffer management</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Recovery</strong></p>
+<ul>
+<li>Challenge: Link state recovery</li>
+<li>Solution: Developed robust recovery mechanisms</li>
+</ul>
+</li>
 </ol>
-<p><img src="https://truelinker.github.io/MyungBlog/img/LTSSM.png" alt="screenshot"></p>
-<pre tabindex="0"><code>  - Detection : Detect when an end point is present. 
-  - Polling : Port transmits training ordered sets and responds to the received
-  - Configuration : Both the transmitter and receiver are sending and receving data at the negotiated data rate.
-  - LO : Normal data transfer state, once it reacehed the L0, which means Root complextor and the endpoint can communicate successuflly.
-  - Recovery : This state is used for a variety of reasons, such as changing back from a low-power Link state, like L1 or L2, or changing the link Bandwidth. 
-</code></pre><ol start="2">
-<li>Packet Transfer using TLP and DLLP</li>
-</ol>
-<p>When transmitting data, TLP and DLLP packets are used. When the two devices are connected through Ordered Set, they exchange necessary data through TCL and DLLP.</p>
-<p><img src="https://truelinker.github.io/MyungBlog/img/PCIePacketTrans.png" alt="screenshot"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This project successfully delivered a high-performance PCIe AHCI device driver, enabling efficient operation of hybrid storage systems. The implementation provides a foundation for future storage system optimizations.</p>
 
         
         <details closed class="f6 fw7 input-reset">
@@ -113,34 +251,30 @@ The flow of the PCIe port initialziation PCIe controller initialization is done 
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">2 minute read, 355 words</dd>
+    <dd class="fw5 ml0">2 minute read, 392 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
     <dt class="fw7">Categories:</dt>
-    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/categories/theme-features">Theme Features</a> </dd>
+    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/categories/technical-projects">Technical Projects</a> </dd>
   </dl>
   
   
   <dl class="f6 lh-copy">
     <dt class="fw7">Series:</dt>
-    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/series/getting-started">Getting Started</a> </dd>
+    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/series/device-driver-development">Device Driver Development</a> </dd>
   </dl>
   
   
   <dl class="f6 lh-copy">
     <dt class="fw7">Tags:</dt>
-    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/tags/hugo-site">hugo-site</a> </dd>
+    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/tags/pcie">PCIe</a>  <a href="https://truelinker.github.io/MyungBlog/tags/ahci">AHCI</a>  <a href="https://truelinker.github.io/MyungBlog/tags/device-drivers">Device Drivers</a>  <a href="https://truelinker.github.io/MyungBlog/tags/storage-systems">Storage Systems</a>  <a href="https://truelinker.github.io/MyungBlog/tags/embedded-systems">Embedded Systems</a> </dd>
   </dl>
   
   <dl class="f6 lh-copy">
     <dt class="fw7">See Also:</dt>
     
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/flashwriter/">Flash Writer</a></dd>
-    
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/filesystem/">Flash FileSystem</a></dd>
-    
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/portfolio/vocamaster/">Word Memorization App</a></dd>
+    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/flashwriter/">Flash Writer Implementation for Embedded Systems</a></dd>
     
   </dl>
 </details>

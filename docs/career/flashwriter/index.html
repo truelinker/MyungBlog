@@ -3,30 +3,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Flash Writer | Blogophonic</title>
+  <title>Flash Writer Implementation for Embedded Systems | Blogophonic</title>
   <meta name="description" content="" />
-  <meta property="og:title" content="Flash Writer" />
-<meta property="og:description" content="Implmented a flash writer. When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.
-Boot Sequence The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program." />
+  <meta property="og:title" content="Flash Writer Implementation for Embedded Systems" />
+<meta property="og:description" content="Project Overview Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.
+Technical Architecture Boot Sequence Architecture The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:
+Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages
+Flash Writer Operation Flow Initial Download Phase Figure 2: Flash Writer download and initialization sequence" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://truelinker.github.io/MyungBlog/career/flashwriter/" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png" /><meta property="og:image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png" /><meta property="article:section" content="career" />
 <meta property="article:published_time" content="2024-04-29T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-04-29T00:00:00+00:00" />
-<meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/filesystem/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/ethernetswitch/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/portfolio/logparser/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/" /><meta property="og:see_also" content="https://truelinker.github.io/MyungBlog/career/secure-drive/" />
 
 
-  <meta itemprop="name" content="Flash Writer">
-<meta itemprop="description" content="Implmented a flash writer. When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.
-Boot Sequence The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program."><meta itemprop="datePublished" content="2024-04-29T00:00:00+00:00" />
+
+
+  <meta itemprop="name" content="Flash Writer Implementation for Embedded Systems">
+<meta itemprop="description" content="Project Overview Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.
+Technical Architecture Boot Sequence Architecture The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:
+Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages
+Flash Writer Operation Flow Initial Download Phase Figure 2: Flash Writer download and initialization sequence"><meta itemprop="datePublished" content="2024-04-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="403"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
-<meta itemprop="keywords" content="hugo-site," />
+<meta itemprop="wordCount" content="292"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"><meta itemprop="image" content="https://truelinker.github.io/career/assets/tachyons-logo-script-feature.png">
+<meta itemprop="keywords" content="Flash Memory,Bootloader,Embedded Systems,RTOS,System Programming," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://truelinker.github.io/career/assets/tachyons-thumbnail.png"/>
 
-<meta name="twitter:title" content="Flash Writer"/>
-<meta name="twitter:description" content="Implmented a flash writer. When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.
-Boot Sequence The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program."/>
+<meta name="twitter:title" content="Flash Writer Implementation for Embedded Systems"/>
+<meta name="twitter:description" content="Project Overview Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.
+Technical Architecture Boot Sequence Architecture The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:
+Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages
+Flash Writer Operation Flow Initial Download Phase Figure 2: Flash Writer download and initialization sequence"/>
 <meta name="twitter:site" content="@formspree"/>
 
   
@@ -60,23 +67,29 @@ Boot Sequence The bootloader in ROM has the simplest structure possible due to t
   <section class="page-content mw7 center">
     <article class="post-content pa0 ph4-l">
       <header class="post-header">
-        <h1 class="f1 lh-solid measure-narrow mb3">Flash Writer</h1>
-        <h4 class="f4 mt0 mb4 lh-title measure">Implemented a Flash writer program</h4>
+        <h1 class="f1 lh-solid measure-narrow mb3">Flash Writer Implementation for Embedded Systems</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">Developing a Robust Flash Memory Programming Solution for Multi-Core Boot Systems</h4>
         <p class="f6 measure lh-copy mv1">By Myung Guk Lee in <a href="https://truelinker.github.io/MyungBlog/categories/theme-features">Theme Features</a> </p>
         <p class="f7 db mv0 ttu">April 29, 2024</p>
       </header>
       <section class="post-body pt5 pb4">
-        <h2 id="implmented-a-flash-writer">Implmented a flash writer.</h2>
-<p>When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.</p>
-<h3 id="boot-sequence">Boot Sequence</h3>
-<p>The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program. In multi-core platforms, a secondary bootloader is required after the boot ROM bootloader. The reason is that the boot ROM&rsquo;s bootloader does not recognize any core other than the main core. So, the second bootloader works on booting other cores. The problem is that the secondary bootloader must be written in a flash memory in advance so that the first bootloader can load the secondary bootloader from flash memory into memory. The flash writer is responsible for writing a secondary bootloader to the flash memory.
-<img src="https://truelinker.github.io/MyungBlog/img/boot-sequence.png" alt="screenshot">
-If there is nothing in the flash memory to load, then ROM Bootloader open a serial(UART) port and download a flash writer binary / load it into RAM. Once the download completed, ROM Bootloader kick in the flash writer.
-<img src="https://truelinker.github.io/MyungBlog/img/download-flashwriter.png" alt="screenshot">
-The Flash writer also open the serial(UART) port to download SBL from the host PC. Once it connected with the host, download SBL and write it into the flash memory. Once the download completed, reset the platform to start from ROM bootloader.
-<img src="https://truelinker.github.io/MyungBlog/img/download-sbl.png" alt="screenshot">
-The SBL downloads RTOS or Bare Metals if there is nothing in the flash memory.
-<img src="https://truelinker.github.io/MyungBlog/img/download-rtos.png" alt="screenshot"></p>
+        <h2 id="project-overview">Project Overview</h2>
+<p>Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.</p>
+<h2 id="technical-architecture">Technical Architecture</h2>
+<h3 id="boot-sequence-architecture">Boot Sequence Architecture</h3>
+<p>The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:</p>
+<p><img src="https://truelinker.github.io/MyungBlog/img/boot-sequence.png" alt="Boot Sequence Architecture">
+<em>Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages</em></p>
+<h3 id="flash-writer-operation-flow">Flash Writer Operation Flow</h3>
+<h4 id="initial-download-phase">Initial Download Phase</h4>
+<p><img src="https://truelinker.github.io/MyungBlog/img/download-flashwriter.png" alt="Flash Writer Download Process">
+<em>Figure 2: Flash Writer download and initialization sequence</em></p>
+<h4 id="sbl-programming-phase">SBL Programming Phase</h4>
+<p><img src="https://truelinker.github.io/MyungBlog/img/download-sbl.png" alt="SBL Download Process">
+<em>Figure 3: Secondary Boot Loader download and programming sequence</em></p>
+<h4 id="rtos-loading-phase">RTOS Loading Phase</h4>
+<p><img src="https://truelinker.github.io/MyungBlog/img/download-rtos.png" alt="RTOS Download Process">
+<em>Figure 4: RTOS/Bare Metal application loading process</em></p>
 <h3 id="how-to-implment-the-flash-writer">How to implment the flash writer</h3>
 <ul>
 <li>Step 1: Active SPI HW block and Read SFDP(Serial Flash Discoverable - Parameter) on the flash memory</li>
@@ -87,6 +100,11 @@ The SBL downloads RTOS or Bare Metals if there is nothing in the flash memory.
 <li>Step 6: All messages are transfered from the PC successfully, then try to load the SBL written on the flash memory into a RAM memory.</li>
 <li>Step 7: Start the SBL by call from the entry point of the SBL loaded into the RAM memory.</li>
 </ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Flash Writer serves as a critical initial programming tool specifically designed for downloading and writing the Secondary Boot Loader (SBL) into blank flash memory via UART communication. Its role is temporary but essential in the boot sequence initialization.</p>
+<h3 id="primary-functions">Primary Functions</h3>
+<p><img src="https://truelinker.github.io/MyungBlog/img/flash-writer-role.png" alt="Flash Writer Role">
+<em>Figure: Flash Writer&rsquo;s role in boot sequence initialization</em></p>
 
         
         <details closed class="f6 fw7 input-reset">
@@ -96,7 +114,7 @@ The SBL downloads RTOS or Bare Metals if there is nothing in the flash memory.
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">2 minute read, 403 words</dd>
+    <dd class="fw5 ml0">2 minute read, 292 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
@@ -107,23 +125,19 @@ The SBL downloads RTOS or Bare Metals if there is nothing in the flash memory.
   
   <dl class="f6 lh-copy">
     <dt class="fw7">Series:</dt>
-    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/series/getting-started">Getting Started</a> </dd>
+    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/series/embedded-systems">Embedded Systems</a>  <a href="https://truelinker.github.io/MyungBlog/series/boot-systems">Boot Systems</a> </dd>
   </dl>
   
   
   <dl class="f6 lh-copy">
     <dt class="fw7">Tags:</dt>
-    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/tags/hugo-site">hugo-site</a> </dd>
+    <dd class="fw5 ml0"> <a href="https://truelinker.github.io/MyungBlog/tags/flash-memory">Flash Memory</a>  <a href="https://truelinker.github.io/MyungBlog/tags/bootloader">Bootloader</a>  <a href="https://truelinker.github.io/MyungBlog/tags/embedded-systems">Embedded Systems</a>  <a href="https://truelinker.github.io/MyungBlog/tags/rtos">RTOS</a>  <a href="https://truelinker.github.io/MyungBlog/tags/system-programming">System Programming</a> </dd>
   </dl>
   
   <dl class="f6 lh-copy">
     <dt class="fw7">See Also:</dt>
     
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/filesystem/">Flash FileSystem</a></dd>
-    
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/portfolio/vocamaster/">Word Memorization App</a></dd>
-    
-    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/portfolio/webrtc/">Web RTC</a></dd>
+    <dd class="fw5 ml0"><a href="https://truelinker.github.io/MyungBlog/career/pciedevicedriver/">PCIe AHCI Device Driver Development</a></dd>
     
   </dl>
 </details>

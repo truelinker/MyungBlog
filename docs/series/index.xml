@@ -8,6 +8,24 @@
     <language>en</language>
     <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://truelinker.github.io/MyungBlog/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Boot Systems</title>
+      <link>https://truelinker.github.io/MyungBlog/series/boot-systems/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/series/boot-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded Systems</title>
+      <link>https://truelinker.github.io/MyungBlog/series/embedded-systems/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/series/embedded-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>https://truelinker.github.io/MyungBlog/series/getting-started/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
@@ -22,6 +40,15 @@
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/series/performance-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Device Driver Development</title>
+      <link>https://truelinker.github.io/MyungBlog/series/device-driver-development/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/series/device-driver-development/</guid>
       <description></description>
     </item>
     

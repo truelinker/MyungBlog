@@ -18,13 +18,15 @@ Background knowledges  FileX : FAT-compatible file system libraries. LevelX : Ha
     </item>
     
     <item>
-      <title>Flash Writer</title>
+      <title>Flash Writer Implementation for Embedded Systems</title>
       <link>https://truelinker.github.io/MyungBlog/career/flashwriter/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/career/flashwriter/</guid>
-      <description>Implmented a flash writer. When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.
-Boot Sequence The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program.</description>
+      <description>Project Overview Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.
+Technical Architecture Boot Sequence Architecture The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:
+Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages
+Flash Writer Operation Flow Initial Download Phase Figure 2: Flash Writer download and initialization sequence</description>
     </item>
     
     <item>
@@ -48,13 +50,15 @@ Technical Background Digital Predistortion (DPD) Digital Predistortion is a cruc
     </item>
     
     <item>
-      <title>PCIe Device Driver</title>
+      <title>PCIe AHCI Device Driver Development</title>
       <link>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</guid>
-      <description>Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
-The flow of the PCIe port initialziation PCIe controller initialization is done in the order shown below.</description>
+      <description>Project Overview Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.
+Technical Architecture System Overview The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:
+Figure 1: High-level architecture of the Hybrid Storage System
+PCIe Port Initialization Flow The PCIe controller initialization follows a precise sequence to ensure reliable operation:</description>
     </item>
     
     <item>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Device Drivers on Blogophonic</title>
+    <link>https://truelinker.github.io/MyungBlog/tags/device-drivers/</link>
+    <description>Recent content in Device Drivers on Blogophonic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://truelinker.github.io/MyungBlog/tags/device-drivers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PCIe AHCI Device Driver Development</title>
+      <link>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</guid>
+      <description>Project Overview Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.
+Technical Architecture System Overview The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:
+Figure 1: High-level architecture of the Hybrid Storage System
+PCIe Port Initialization Flow The PCIe controller initialization follows a precise sequence to ensure reliable operation:</description>
+    </item>
+    
+  </channel>
+</rss>

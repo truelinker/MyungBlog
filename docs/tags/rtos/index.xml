@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RTOS on Blogophonic</title>
+    <link>https://truelinker.github.io/MyungBlog/tags/rtos/</link>
+    <description>Recent content in RTOS on Blogophonic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://truelinker.github.io/MyungBlog/tags/rtos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flash Writer Implementation for Embedded Systems</title>
+      <link>https://truelinker.github.io/MyungBlog/career/flashwriter/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/flashwriter/</guid>
+      <description>Project Overview Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.
+Technical Architecture Boot Sequence Architecture The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:
+Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages
+Flash Writer Operation Flow Initial Download Phase Figure 2: Flash Writer download and initialization sequence</description>
+    </item>
+    
+  </channel>
+</rss>

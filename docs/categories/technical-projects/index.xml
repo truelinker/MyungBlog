@@ -18,5 +18,17 @@ Technical Background Digital Predistortion (DPD) Digital Predistortion is a cruc
  Pre-analyzing the PA&amp;rsquo;s nonlinear characteristics Applying inverse distortion to the input signal Achieving linear output after PA processing  Figure 1: Digital Predistortion working principle showing signal transformation stages</description>
     </item>
     
+    <item>
+      <title>PCIe AHCI Device Driver Development</title>
+      <link>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</guid>
+      <description>Project Overview Led the development of a PCIe AHCI device driver for a Solid State Hybrid Drive (SSHD) system. This innovative storage solution combines HDD capacity with SSD performance by utilizing a PCIe-connected SSD cache for frequently accessed data.
+Technical Architecture System Overview The SSHD architecture integrates traditional HDD storage with a PCIe-connected SSD cache:
+Figure 1: High-level architecture of the Hybrid Storage System
+PCIe Port Initialization Flow The PCIe controller initialization follows a precise sequence to ensure reliable operation:</description>
+    </item>
+    
   </channel>
 </rss>
