@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance Optimization on Blogophonic</title>
+    <link>https://truelinker.github.io/MyungBlog/tags/performance-optimization/</link>
+    <description>Recent content in Performance Optimization on Blogophonic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://truelinker.github.io/MyungBlog/tags/performance-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing DPD Algorithm with ARM NEON SIMD</title>
+      <link>https://truelinker.github.io/MyungBlog/career/neonsimd/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://truelinker.github.io/MyungBlog/career/neonsimd/</guid>
+      <description>Project Overview This project focused on significantly improving the performance of Digital Predistortion (DPD) algorithm implementation through ARM NEON SIMD optimization. The optimization resulted in substantial performance gains by leveraging parallel processing capabilities of ARM architecture.
+Technical Background Digital Predistortion (DPD) Digital Predistortion is a crucial technique in modern wireless communication systems that compensates for power amplifier (PA) nonlinearities. The process works by:
+ Pre-analyzing the PA&amp;rsquo;s nonlinear characteristics Applying inverse distortion to the input signal Achieving linear output after PA processing  Figure 1: Digital Predistortion working principle showing signal transformation stages</description>
+    </item>
+    
+  </channel>
+</rss>

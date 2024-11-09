@@ -1,7 +1,7 @@
 ---
-title: "Flash Writer"
-subtitle: "Implemented a Flash writer program"
-excerpt: "Implemented a Flash writer program"
+title: "Flash Writer Implementation for Embedded Systems"
+subtitle: "Developing a Robust Flash Memory Programming Solution for Multi-Core Boot Systems"
+excerpt: "Deep dive into the implementation of a Flash Writer program for embedded systems, focusing on secure boot sequence and memory management"
 date: 2024-04-29
 author: "Myung Guk Lee"
 draft: false
@@ -9,29 +9,45 @@ images:
   - /career/assets/tachyons-thumbnail.png
   - /career/assets/tachyons-logo-script-feature.png
 series:
-  - Getting Started
+  - Embedded Systems
+  - Boot Systems
 tags:
-  - hugo-site
+  - Flash Memory
+  - Bootloader
+  - Embedded Systems
+  - RTOS
+  - System Programming
 categories:
   - Theme Features
 # layout options: single or single-sidebar
 layout: single
 ---
 
+## Project Overview
 
-## Implmented a flash writer.
+Developed a sophisticated Flash Writer application for initializing flash memory in new embedded systems. This critical tool enables the programming of secondary boot loaders (SBL) and establishes the foundation for multi-core boot sequences.
 
-When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this. 
+## Technical Architecture
 
-### Boot Sequence
-The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program. In multi-core platforms, a secondary bootloader is required after the boot ROM bootloader. The reason is that the boot ROM's bootloader does not recognize any core other than the main core. So, the second bootloader works on booting other cores. The problem is that the secondary bootloader must be written in a flash memory in advance so that the first bootloader can load the secondary bootloader from flash memory into memory. The flash writer is responsible for writing a secondary bootloader to the flash memory.
-![screenshot](/img/boot-sequence.png)
-If there is nothing in the flash memory to load, then ROM Bootloader open a serial(UART) port and download a flash writer binary / load it into RAM. Once the download completed, ROM Bootloader kick in the flash writer.
-![screenshot](/img/download-flashwriter.png)
-The Flash writer also open the serial(UART) port to download SBL from the host PC. Once it connected with the host, download SBL and write it into the flash memory. Once the download completed, reset the platform to start from ROM bootloader.
-![screenshot](/img/download-sbl.png)
-The SBL downloads RTOS or Bare Metals if there is nothing in the flash memory.
-![screenshot](/img/download-rtos.png)
+### Boot Sequence Architecture
+The boot sequence follows a carefully orchestrated process, starting from ROM and progressing through multiple stages:
+
+![Boot Sequence Architecture](/img/boot-sequence.png)
+*Figure 1: Complete boot sequence flow showing ROM, Flash Writer, and SBL stages*
+
+### Flash Writer Operation Flow
+
+#### Initial Download Phase
+![Flash Writer Download Process](/img/download-flashwriter.png)
+*Figure 2: Flash Writer download and initialization sequence*
+
+#### SBL Programming Phase
+![SBL Download Process](/img/download-sbl.png)
+*Figure 3: Secondary Boot Loader download and programming sequence*
+
+#### RTOS Loading Phase
+![RTOS Download Process](/img/download-rtos.png)
+*Figure 4: RTOS/Bare Metal application loading process*
 
 
 ### How to implment the flash writer
@@ -42,3 +58,11 @@ The SBL downloads RTOS or Bare Metals if there is nothing in the flash memory.
 - Step 5: When a message is received, it decodes the command ID and processes it according to the command ID.
 - Step 6: All messages are transfered from the PC successfully, then try to load the SBL written on the flash memory into a RAM memory.
 - Step 7: Start the SBL by call from the entry point of the SBL loaded into the RAM memory.
+
+## Conclusion
+
+The Flash Writer serves as a critical initial programming tool specifically designed for downloading and writing the Secondary Boot Loader (SBL) into blank flash memory via UART communication. Its role is temporary but essential in the boot sequence initialization.
+
+### Primary Functions
+![Flash Writer Role](/img/flash-writer-role.png)
+*Figure: Flash Writer's role in boot sequence initialization*

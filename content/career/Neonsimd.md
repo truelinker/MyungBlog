@@ -1,7 +1,7 @@
 ---
-title: "NEON SIMD"
-subtitle: "Improved DPD (Digital Predistortion) algorithm performance by utilizing ARM's NEON registers"
-excerpt: "Improved Digital Predistortion algorithm performance by utilizing NEON SIMD of ARM Cortex-A"
+title: "Optimizing DPD Algorithm with ARM NEON SIMD"
+subtitle: "Accelerating Digital Predistortion Performance through NEON Register Optimization"
+excerpt: "A deep dive into optimizing Digital Predistortion algorithm using ARM Cortex-A's NEON SIMD capabilities"
 date: 2024-04-29
 author: "Myung Guk Lee"
 draft: false
@@ -9,41 +9,86 @@ images:
   - /career/assets/tachyons-thumbnail.png
   - /career/assets/tachyons-logo-script-feature.png
 series:
-  - Getting Started
+  - Performance Optimization
 tags:
-  - hugo-site
+  - ARM
+  - NEON SIMD
+  - Performance Optimization
+  - Digital Signal Processing
 categories:
-  - Theme Features
+  - Technical Projects
 # layout options: single or single-sidebar
 layout: single
 ---
 
 
-## In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once.
+## Project Overview
 
-### Background knowledges
-1. DPD (Digital Predistortion)
-Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA,  effectively counteracting the nonlinear introduced by the amplifier. By predistortion the signal in a controlled manner, the output from the PA becomes more linear, resulting in improved signal quality.
-![screenshot](/img/dpd.png)
+This project focused on significantly improving the performance of Digital Predistortion (DPD) algorithm implementation through ARM NEON SIMD optimization. The optimization resulted in substantial performance gains by leveraging parallel processing capabilities of ARM architecture.
 
-2. ARM NEON
-NEON is a SIMD(Single Instruction Multiple Data) architecture extension for the ARM processor. SIMD allows the same operation to be performed on multiple data in paralle, which can significantly improve performance for certain types of workloads.
+## Technical Background
 
-The SoC is ARM Cortex-A series cores feature NEON-Coprocessor. This NEON coprocessor has 32 128-bit SIMD registers. Using these SIMD registers, parallel processing is possible as shown below.
-![screenshot](/img/neonsimd.png)
+### Digital Predistortion (DPD)
 
-### Implementation
-1. Data Alignment
-   To load multiple data into NEON registers, a NEON register size is is 128-bit. these data must be placed in contigous memory space. Additionally, DATA used in DPD is a complex type that combines real and image values. Since ARM armv-8 cannot perform operations on this complex type, dividing it into real and image parts must also be done.
-![screenshot](/img/dividrealandimage.png)
+Digital Predistortion is a crucial technique in modern wireless communication systems that compensates for power amplifier (PA) nonlinearities. The process works by:
 
-2. Loop Unrolling & Unwinding
-   Unrolling the loop and then grouping these unrolled iterations into a larger loop. This technique has several advantages:
-   - Avoids branching,
-   - Keep all temporary results into registers.
-   - Data dependencies from previous versions help reduce pipeline latency.
-![screenshot](/img/unrollingandunwinding.png)
+1. **Pre-analyzing** the PA's nonlinear characteristics
+2. **Applying** inverse distortion to the input signal
+3. **Achieving** linear output after PA processing
 
-3. Optimizing the matrix operations using 4x4 submatrices
-   By unrolling and unwinding with a 4x4 submatrix, performance has been improved in matrix multiplication operations.
-![screenshot](/img/4_4submatrix.png)
+![DPD Process Visualization](/img/dpd.png)
+*Figure 1: Digital Predistortion working principle showing signal transformation stages*
+
+### ARM NEON Architecture
+
+NEON is ARM's advanced SIMD (Single Instruction Multiple Data) architecture extension, designed for high-performance computing applications. Key features include:
+
+- 32 dedicated 128-bit SIMD registers
+- Parallel processing capabilities
+- Support for both integer and floating-point operations
+
+![NEON SIMD Architecture](/img/neonsimd.png)
+*Figure 2: NEON SIMD parallel processing visualization*
+
+## Optimization Strategy
+
+### 1. Memory Alignment and Data Structure Optimization
+
+To maximize NEON register utilization, careful attention was paid to data alignment and structure:
+
+- **Memory Alignment**: Ensured 128-bit alignment for optimal NEON register loading
+- **Complex Data Handling**: Separated real and imaginary components for efficient SIMD processing
+- **Contiguous Memory Layout**: Optimized data placement for vectorized operations
+
+![Data Structure Optimization](/img/dividrealandimage.png)
+*Figure 3: Complex data separation and alignment strategy*
+
+### 2. Advanced Loop Optimization
+
+Implemented sophisticated loop optimization techniques:
+
+- **Loop Unrolling**: Reduced branch predictions and improved instruction pipeline efficiency
+- **Loop Unwinding**: Maximized register utilization and reduced memory access overhead
+- **Register Allocation**: Optimized temporary result storage in NEON registers
+
+![Loop Optimization Strategy](/img/unrollingandunwinding.png)
+*Figure 4: Loop unrolling and unwinding implementation*
+
+### 3. Matrix Operation Enhancement
+
+Developed an optimized matrix multiplication approach using 4x4 submatrices:
+
+- **SIMD Parallelization**: Processed multiple elements simultaneously
+
+![Matrix Operation Optimization](/img/4_4submatrix.png)
+*Figure 5: 4x4 submatrix multiplication optimization*
+
+## Performance Results
+
+The optimization efforts resulted in:
+- Significant reduction in processing time
+- Improved throughput for real-time applications
+- Better resource utilization
+
+![Performance Results](/img/neon_optimization.png)
+*Figure 6: Performance results showing the improvement in processing time and throughput*

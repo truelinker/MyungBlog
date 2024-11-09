@@ -4,86 +4,106 @@
     <title>Getting Started on Blogophonic</title>
     <link>https://truelinker.github.io/MyungBlog/series/getting-started/</link>
     <description>Recent content in Getting Started on Blogophonic</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://truelinker.github.io/MyungBlog/series/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://truelinker.github.io/MyungBlog/series/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flash FileSystem</title>
       <link>https://truelinker.github.io/MyungBlog/career/filesystem/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/filesystem/</guid>
-      <description>Implmented a file system on a QSPI NOR Flash. Azura RTOS(aka, ThreadX) provides FileX/LevelX to help develop FAT16/32 file systems on flash memory. I used this API to implement a file system for firmware running on Azura RTOS(aka, ThreadX) over QSPI NOR flash memory.&#xA;Background knowledges FileX : FAT-compatible file system libraries. LevelX : Handle NAND or NOR flash memories managment for wear-leveling to increase the memory lifetime and support multiplie instances of NAND and/or NOR pairs.</description>
+      <description>Implmented a file system on a QSPI NOR Flash. Azura RTOS(aka, ThreadX) provides FileX/LevelX to help develop FAT16/32 file systems on flash memory. I used this API to implement a file system for firmware running on Azura RTOS(aka, ThreadX) over QSPI NOR flash memory.
+Background knowledges  FileX : FAT-compatible file system libraries. LevelX : Handle NAND or NOR flash memories managment for wear-leveling to increase the memory lifetime and support multiplie instances of NAND and/or NOR pairs.</description>
     </item>
+    
     <item>
       <title>Flash Writer</title>
       <link>https://truelinker.github.io/MyungBlog/career/flashwriter/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/flashwriter/</guid>
-      <description>Implmented a flash writer. When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.&#xA;Boot Sequence The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program.</description>
+      <description>Implmented a flash writer. When we first bring up the board and nothing has been written to the flash memory, we need an application to write to the flash memory that will use the secondary boot loader to the flash memory. The Flash writer I developed does this.
+Boot Sequence The bootloader in ROM has the simplest structure possible due to the ROM read-only nature and small size. The main purpose of this ROM bootloader is to load a secondary bootloader, RTOS, or a bare-matal program.</description>
     </item>
-    <item>
-      <title>NEON SIMD</title>
-      <link>https://truelinker.github.io/MyungBlog/career/neonsimd/</link>
-      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://truelinker.github.io/MyungBlog/career/neonsimd/</guid>
-      <description>In order to reduce the execution time of the DPD (Digital Predistortion) algorithm, the code was optimized to use NEON registers, which enable execution of multiple data at once. Background knowledges DPD (Digital Predistortion) Digital Pre-Distortion(DPD) is a technique used to compensate for nonlinearities introduced by power amplifiers(PAs). DPD works by applying a predistortion to the input signal before it passes through the PA, effectively counteracting the nonlinear introduced by the amplifier.</description>
-    </item>
+    
     <item>
       <title>Layer 2 switch development</title>
       <link>https://truelinker.github.io/MyungBlog/career/ethernetswitch/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/ethernetswitch/</guid>
-      <description>When I was working at Dasan Networks ( https://en.wikipedia.org/wiki/DASAN_Networks ), I developed a Layer 2 switch device based on Dasan Networks&amp;rsquo; custom Linux using Broadcom and Marvell&amp;rsquo;s Layer 2 switch SoCs. In addition, I have developed DHCP and ARP and other functions. The following figure shows the Linux network stack of 24 port ethernet switch. Layer 2 switch SoCs provides basic functions such as RX/TX Ring Buffer and MAC address learning table as shown in the figure below.</description>
+      <description>When I was working at Dasan Networks ( https://en.wikipedia.org/wiki/DASAN_Networks ), I developed a Layer 2 switch device based on Dasan Networks&#39; custom Linux using Broadcom and Marvell&amp;rsquo;s Layer 2 switch SoCs. In addition, I have developed DHCP and ARP and other functions.  The following figure shows the Linux network stack of 24 port ethernet switch. Layer 2 switch SoCs provides basic functions such as RX/TX Ring Buffer and MAC address learning table as shown in the figure below.</description>
     </item>
+    
     <item>
       <title>Log Parser</title>
       <link>https://truelinker.github.io/MyungBlog/portfolio/logparser/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/portfolio/logparser/</guid>
-      <description>Log Parser In order to solve numerous bugs and problems, I need to look at log data generated by many drives. However, sometimes the log amount exceeds several hundred megabytes. In order to save time and effort, I created a parser python script, which is helping me to solve more problems in a timely manner while reducing time and effort. How it works [1] Enter the path of the file where the Enum values are defined.</description>
+      <description>Log Parser In order to solve numerous bugs and problems, I need to look at log data generated by many drives. However, sometimes the log amount exceeds several hundred megabytes. In order to save time and effort, I created a parser python script, which is helping me to solve more problems in a timely manner while reducing time and effort.  How it works [1] Enter the path of the file where the Enum values are defined.</description>
     </item>
+    
     <item>
       <title>PCIe Device Driver</title>
       <link>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/pciedevicedriver/</guid>
-      <description>Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.&#xA;The flow of the PCIe port initialziation PCIe controller initialization is done in the order shown below.</description>
+      <description>Participated in the SSHDD development. A small-capacity SSD inside the HDD is a drive connected by a PCIe bus. So, frequently read data is stored on the SSD, so it is a drive with improved speed compared to the existing HDD. My part is PCIe AHCI drive driver development, because the SSD was used AHCI connected through PCIe bus.
+The flow of the PCIe port initialziation PCIe controller initialization is done in the order shown below.</description>
     </item>
+    
     <item>
       <title>Secure Drive</title>
       <link>https://truelinker.github.io/MyungBlog/career/secure-drive/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/secure-drive/</guid>
-      <description>Now I&amp;rsquo;m working at Western Digital as a firmware developer on a team that provides a common security engine for SSDs and HDDs. I am in charge of developing Security APIs so that the security engine provided by the team can be used according to the HDD characteristics. TCG protocols (TCG enterprise, opal, pyrite, etc). Sanitize ATA Security 1. [TCG] (https://nvmexpress.org/wp-content/uploads/TCGandNVMe_Joint_White_Paper-TCG_Storage_Opal_and_NVMe_FINAL.pdf) provides that data stored on HDDs or SSDs is self-encrypted under policy-based access control.</description>
+      <description>Now I&amp;rsquo;m working at Western Digital as a firmware developer on a team that provides a common security engine for SSDs and HDDs. I am in charge of developing Security APIs so that the security engine provided by the team can be used according to the HDD characteristics.  TCG protocols (TCG enterprise, opal, pyrite, etc). Sanitize ATA Security   1. [TCG] (https://nvmexpress.org/wp-content/uploads/TCGandNVMe_Joint_White_Paper-TCG_Storage_Opal_and_NVMe_FINAL.pdf) provides that data stored on HDDs or SSDs is self-encrypted under policy-based access control.</description>
     </item>
+    
     <item>
       <title>Serial communication</title>
       <link>https://truelinker.github.io/MyungBlog/career/sio/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/sio/</guid>
       <description>I developed a serial communication protocol. As for the background, as the tester that uses only a single serial bus was newly introduced, I had to change the firmware to use it with the tester that uses the existing dual serial bus, and I was in charge of developing the fimrware. The purpose of this project is to change the firmware to work with testers with different serial communication methods on the same firmware.</description>
     </item>
+    
     <item>
       <title>SMR</title>
       <link>https://truelinker.github.io/MyungBlog/career/smr/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/career/smr/</guid>
       <description>Participated in the drive managed SMR HDD development. Because the size of Read Header in HDD is smaller than Write Header, it is possible to write more densely when writing. This is the basic concept of SMR (Shingled Magnetic Recording). There are two main types of SMR HDDs: Host Managed SMR and Drive Managed SMR. The reason for dividing into two is that for SMR drives capable of only sequential write/read, the location of LBA and actual physical location is different each time it is written, so an indirection mapping table is needed for this.</description>
     </item>
+    
     <item>
       <title>Web RTC</title>
       <link>https://truelinker.github.io/MyungBlog/portfolio/webrtc/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/portfolio/webrtc/</guid>
-      <description>Web RTC Using the WebRTC open source, I&amp;rsquo;d modified to implment my own p2p video chat application between the android native app and chrom web app.&#xA;Github : https://github.com/truelinker/webrtc_p2pvideo&#xA;How it works Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other&amp;rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&amp;rsquo;s media information based on the given network information.</description>
+      <description>Web RTC Using the WebRTC open source, I&amp;rsquo;d modified to implment my own p2p video chat application between the android native app and chrom web app.
+ Github : https://github.com/truelinker/webrtc_p2pvideo
+ How it works  Two peers (Android application and web application) connect to a room created by a server, I used a Javascript web server using node.js and exchange information such as each other&amp;rsquo;s network information (ip, port). When starting a video call, the call starts by exchanging each other&amp;rsquo;s media information based on the given network information.</description>
     </item>
+    
     <item>
       <title>Word Memorization App</title>
       <link>https://truelinker.github.io/MyungBlog/portfolio/vocamaster/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://truelinker.github.io/MyungBlog/portfolio/vocamaster/</guid>
-      <description>Voca Master This is an Android application that I developed in 2011. This is an application that helps you memorize new English words.&#xA;Github : https://github.com/truelinker/vocaMaster&#xA;Click the video demo above. ☝️ Abstraction Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere. For the summer personal project, I‟ve developed an education app for the Android platform; the app is for helping people to memorize vocabularies with spending remnant time such as during waiting a bus, waiting a meal, and so on.</description>
+      <description>Voca Master This is an Android application that I developed in 2011. This is an application that helps you memorize new English words.
+ Github : https://github.com/truelinker/vocaMaster
+ 
+Click the video demo above. ☝️ Abstraction Mobile devices are useful in many respects such as education, entertainment, and so on, because people bring their mobile gadgets all the time. Therefore, apps running on the devices are exposed to users anytime and anywhere.</description>
     </item>
+    
   </channel>
 </rss>
